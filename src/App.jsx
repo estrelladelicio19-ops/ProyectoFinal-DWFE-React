@@ -1,20 +1,23 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom';
+import LayoutPrincipal from './Layout/LayoutPrincipal';
+import Inicio from './pages/Inicio';
+import ExperienciaSmart from './pages/ExperienciaSmart';
+import Contactanos from './pages/Contactanos';
+import NuestroEquipo from './pages/NuestroEquipo';
 import './App.css'
-import HeaderPagina from './components/HeaderPagina'
-import Nav from './components/NavPagina'
-import Footer from './components/FooterPagina'
+import './estilosJohan.css';
+import './estilosEstrella.css' 
 
-function App() {
-  const [count, setCount] = useState(0)
 
+export default function App() {
   return (
-    <>
-      <HeaderPagina/>
-      <Nav></Nav>
-      
-      <Footer></Footer>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<LayoutPrincipal />}>
+        <Route index element={<Inicio />} />
+        <Route path="/ExperienciaSmart" element={<ExperienciaSmart/>} />
+        <Route path="/contactanos" element={<Contactanos />} />
+        <Route path="/nuestro-equipo" element={<NuestroEquipo />} />
+      </Route>
+    </Routes>
+  );
 }
-
-export default App

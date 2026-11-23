@@ -1,7 +1,5 @@
 import React from 'react';
 import '../estilosJohan.css'; 
-import Nav from '../components/NavPagina';
-import HeaderPagina from '../components/HeaderPagina';
 import fotoJohan from '../assets/imgInicio/CruzHuaman.jpg';
 import fotoEstrella from '../assets/imgInicio/Estrella.jpeg';
 import iconoFacebook from '../assets/imgInicio/Facebook.png';
@@ -11,8 +9,6 @@ import iconoTiktok from '../assets/imgInicio/tiktok.png';
 function NuestroEquipo() {
   return (
     <>
-      <Nav />
-      <HeaderPagina />
 
       <section className="equipo">
         <h2 data-i18n="tituloEquipo">Nuestro Equipo</h2>

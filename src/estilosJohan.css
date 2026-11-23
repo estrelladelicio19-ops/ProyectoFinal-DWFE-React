@@ -28,18 +28,6 @@
   transform: scale(1.05);
 }
 
-header {
-  position: relative;
-  width: 100%;
-  min-height: 90vh; 
-  background-image: url('assets/TECH1.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .overlay {
   width: 100%;

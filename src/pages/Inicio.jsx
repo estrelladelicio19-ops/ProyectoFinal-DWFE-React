@@ -1,19 +1,19 @@
 import React from 'react';
 import '../estilosJohan.css'
-import experienciaImg from '../assets/imgInicio/experienciaImg';
-import compylapImg from '../assets/imgInicio/compylapImg';
-import celytab from '../assets/imgInicio/celytab';
-import gaming from '../assets/imgInicio/gaming';
-import shome from '../assets/imgInicio/shome';
-import Nav from '../components/NavPagina';
-import HeaderPagina from '../components/HeaderPagina';
+import experienciaImg from '../assets/imgInicio/experencia.jpg';
+import compylapImg from '../assets/imgInicio/compylap.webp';
+import celytab from '../assets/imgInicio/celytab.jpg';
+import gaming from '../assets/imgInicio/gaming.jpg';
+import shome from '../assets/imgInicio/shome.jpg';
+import Tech1 from '../assets/imgInicio/TECH1.jpg'
 
 function Inicio() {
   return (
-    <>
-      <Nav />
-      <HeaderPagina />
 
+    <>
+    <figure style={{ backgroundImage: `url(${Tech1})` }}>
+    </figure>
+        
       <section className="experiencia">
         <div className="exp-img">
           <img src={experienciaImg} alt="Lobby del Hotel" />

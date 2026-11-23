@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import HeaderPagina from "../components/HeaderPagina";
-import Nav from "../components/NavPagina";
-import Footer from "../components/FooterPagina";
 import "../estilosEstrella.css";
 import Facebook from'../assets/facebook-removebg-preview.png'
 import Instagram from'../assets/insta-removebg-preview.png'
@@ -21,8 +18,7 @@ function Contactanos() {
 
   return (
     <>
-      <HeaderPagina></HeaderPagina>
-      <Nav></Nav>
+  
       <section className="contacto">
         <h1 className="titulo" data-i18n="tituloContacto">
           Contáctanos
@@ -185,7 +181,6 @@ function Contactanos() {
         </div>
       </section>
 
-      <Footer></Footer>
     </>
   );
 }

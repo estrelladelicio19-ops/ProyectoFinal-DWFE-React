@@ -1,16 +1,14 @@
 import React from 'react'
-import HeaderPagina from '../components/HeaderPagina'
-import Nav from '../components/NavPagina'
-import Footer from '../components/FooterPagina'
 import '../estilosEstrella.css'
 import HistoriaImagen from'../assets/historia.webp'
 
 function ExperienciaSmart() {
   return (
     <>
-    <HeaderPagina></HeaderPagina>
-    <Nav></Nav>
     <main>
+        <div class="tituloMenu">
+                <h1 data-i18n="titulo">MUNDO TECH</h1>
+            </div>
         <div className="historia-layout">
             <section className="baner">
                 <img src={HistoriaImagen} width="200px" alt="BANNER TECH"/>
@@ -80,7 +78,6 @@ function ExperienciaSmart() {
             </div>
         </section>
 </main>
-        <Footer></Footer>
     </>
   )
 }

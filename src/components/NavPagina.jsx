@@ -119,7 +119,7 @@ export default function Nav() {
         <li
           className={`desplegable ${subMenuAbierto === "categorias" ? "open" : ""}`}>
           <NavLink
-            to="/contacto"
+            to=""
             className="nav-link"
             data-i18n="sopAyu"
             onClick={(e) => toggleSubMenu("soporte", e)}
@@ -129,7 +129,7 @@ export default function Nav() {
           <ul className="submenu">
             <li>
               <NavLink
-                to="/contacto"
+                to="/contactanos"
                 className={claseActiva}
                 data-i18n="contacto"
                 onClick={cerrarMenus}
