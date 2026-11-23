@@ -51,7 +51,7 @@ export default function Nav() {
 
         <li className="desplegable">
           <NavLink
-            to="/experiencia-smart"
+            to="/ExperienciaSmart"
             className={claseActiva}
             data-i18n="expSmart"
             onClick={cerrarMenus}
