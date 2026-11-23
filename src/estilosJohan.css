@@ -7,6 +7,27 @@
   background: #0b1f33;
   z-index: 9999;
 }
+
+.imagen {
+  position: fixed;
+  top: 6px;
+  left: 60px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  z-index: 1002;
+}
+
+.imagen img {
+  height: 70px;
+  width: auto;
+  transition: 0.4s;
+}
+
+.imagen img:hover {
+  transform: scale(1.05);
+}
+
 header {
   position: relative;
   width: 100%;

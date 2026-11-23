@@ -1,9 +1,12 @@
 import '../estilosJohan.css';
+import logoImg from '../assets/LOGOM.png';
 
 function HeaderPagina() {
     return (
         <>
+
         <div id="general"></div>
+        <div className="imagen"> < img src={logoImg}></img></div>
         <header>
         <div className="overlay">
             <h1>
