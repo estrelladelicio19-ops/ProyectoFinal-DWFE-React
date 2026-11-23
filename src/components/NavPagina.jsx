@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import '../App.css'
 
 export default function Nav() {
   const [menuAbierto, setMenuAbierto] = useState(false);
@@ -32,7 +33,7 @@ export default function Nav() {
         aria-expanded={menuAbierto}
         onClick={() => setMenuAbierto((prev) => !prev)}
       >
-        ☰
+       
       </button>
 
       <ul className={`menus ${menuAbierto ? "abierto" : ""}`}>
@@ -137,16 +138,15 @@ export default function Nav() {
         </li>
 
         <li
-          className={`desplegable ${subMenuAbierto === "soporte" ? "open" : ""}`}
-        >
-          <button
-            type="button"
+          className={`desplegable ${subMenuAbierto === "categorias" ? "open" : ""}`}>
+          <NavLink
+            to="/contacto"
             className="nav-link"
             data-i18n="sopAyu"
             onClick={(e) => toggleSubMenu("soporte", e)}
           >
             Soporte / Ayuda
-          </button>
+          </NavLink>
           <ul className="submenu">
             <li>
               <NavLink
@@ -168,7 +168,8 @@ export default function Nav() {
                 Nuestro Equipo
               </NavLink>
             </li>
-          </ul>
+            </ul>
+            
         </li>
       </ul>
     </nav>
