@@ -115,27 +115,6 @@ export default function Nav() {
           </ul>
         </li>
 
-        <li>
-          <NavLink
-            to="/nuestras-tiendas"
-            className={claseActiva}
-            data-i18n="nueTiend"
-            onClick={cerrarMenus}
-          >
-            Nuestras Tiendas
-          </NavLink>
-        </li>
-
-        <li className="desplegable">
-          <NavLink
-            to="/descuentos-app"
-            className={claseActiva}
-            data-i18n="descApp"
-            onClick={cerrarMenus}
-          >
-            Descuentos App
-          </NavLink>
-        </li>
 
         <li
           className={`desplegable ${subMenuAbierto === "categorias" ? "open" : ""}`}>
