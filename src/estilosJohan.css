@@ -1,10 +1,105 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Contenedor principal del banner/header */
+header {
+  position: relative;
+  width: 100%;
+  min-height: 90vh; 
+  background-image: url('/ruta-de-tu-imagen.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #f8f8f8;
+.overlay {
+  width: 100%;
+  min-height: 90vh;
+  background-color: rgba(15, 23, 42, 0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;
+  color: #ffffff;          
+  padding: 20px;
+}
+
+.overlay h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  line-height: 1.05;
+}
+
+.palabra-medio {
+  font-size: 95px;
+  font-weight: 800;
+  color: #ffffff;
+  opacity: 0;
+  animation: fadeRight 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.palabra-abajo {
+  font-size: 105px;
+  font-weight: 800;
+  color: #22d3ee;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.linea-divisoria {
+  margin: 15px 0 10px 0;
+  letter-spacing: 3px;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.palabra-arriba {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin: 0;
+  color: #ffffff;
+  opacity: 0;
+  animation: fadeDown 1s ease forwards;
+  animation-delay: 1.5s;
+}
+
+
+/* Animaciones necesarias para que pasen de opacity: 0 a opacity: 1 */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,13 +1,15 @@
+import '../estilosJohan.css';
+
 function HeaderPagina() {
     return (
-        <header className="Contenedor">
+        <header>
         <div className="overlay">
             <h1>
-                <span className="palabra-medio">MINIMARKET</span>
-                <span className="palabra-abajo">TECH</span>
+            <span className="palabra-medio">MINIMARKET</span>
+            <span className="palabra-abajo">TECH</span>
             </h1>
-            <p>-----------------------------------</p>
-            <h1>S.A.C</h1>
+            <p className="linea-divisoria">-----------------------------------</p>
+            <p className="palabra-arriba">S.A.C</p>
         </div>
         </header>
     );
