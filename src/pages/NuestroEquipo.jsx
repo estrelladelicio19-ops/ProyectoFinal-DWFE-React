@@ -9,7 +9,7 @@ import iconoTiktok from '../assets/imgInicio/tiktok.png';
 function NuestroEquipo() {
   return (
     <>
-
+    
       <section className="equipo">
         <h2 data-i18n="tituloEquipo">Nuestro Equipo</h2>
 
