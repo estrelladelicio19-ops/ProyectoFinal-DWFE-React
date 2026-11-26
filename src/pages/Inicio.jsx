@@ -5,15 +5,11 @@ import compylapImg from '../assets/imgInicio/compylap.webp';
 import celytab from '../assets/imgInicio/celytab.jpg';
 import gaming from '../assets/imgInicio/gaming.jpg';
 import shome from '../assets/imgInicio/shome.jpg';
-import Tech1 from '../assets/imgInicio/TECH1.jpg'
 
 function Inicio() {
   return (
 
     <>
-    <figure style={{ backgroundImage: `url(${Tech1})` }}>
-    </figure>
-        
       <section className="experiencia">
         <div className="exp-img">
           <img src={experienciaImg} alt="Lobby del Hotel" />

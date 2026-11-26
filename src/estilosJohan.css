@@ -32,7 +32,8 @@
 .overlay {
   width: 100%;
   min-height: 90vh;
-  background-color: rgba(15, 23, 42, 0.55);
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -40,6 +41,10 @@
   text-align: center;
   color: #ffffff;          
   padding: 20px;
+}
+
+.header-compacto {
+  height: 98px;
 }
 
 .overlay h1 {
@@ -118,7 +123,6 @@
     transform: translateY(0);
   }
 }
-
 /*Experiencia - contenido */
 
 .experiencia {
