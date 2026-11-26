@@ -6,7 +6,7 @@
         "descripcion": "Ultraportátil de alto rendimiento con chip M2, pantalla Liquid Retina y hasta 18 horas de batería. Perfecta para productividad y diseño móvil.",
         "precio": 2899.0,
         "moneda": "PEN",
-        "imagen": "../MEDIA/IMAGENES/cat1-1.webp",
+        "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB-rejscqVMzO5YGCY8FvkVFx-E3fB6chfeHc3zfUA2ikuU9MM",
         "textoAlternativo": "MacBook Air M2",
         "categoriaId": "computacion"
     },
