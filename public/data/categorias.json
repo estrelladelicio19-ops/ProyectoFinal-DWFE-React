@@ -1,18 +1,18 @@
 [
     {
-        "id": "computacion",
+        "id": 1,
         "nombre": "Computación y Laptos"
     },
     {
-        "id": "celulares",
+        "id": 2,
         "nombre": "Celurares y Tablets"
     },
     {
-        "id": "gaming",
+        "id": 3,
         "nombre": "Gaming"
     },
     {
-        "id": "smarthome",
+        "id": 4,
         "nombre": "Smart Home y Oficina"
     }
 ]

@@ -1,4 +1,4 @@
-const URL_API = "http://localhost:3000/api/products";
+const URL_API = "public/data/productos.json";
 
 export async function obtenerProductos()
 {

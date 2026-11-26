@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { guardarProducto, obtenerProductos, borrarProducto, actualizarProducto } from "../services/ProductoServices"
-import CardProducto from "./CardProducto";
+import CardProductos from "./CardProductos"
 import FormularioProducto from "./FormularioProducto";
 
 export default function CatalogoProductos() {
@@ -29,10 +29,14 @@ export default function CatalogoProductos() {
         setProductoEditar(
             {
             id: 0,
-            category: "",
-            name: "",
-            stock: 0,
-            imageUrl: ""
+            marca: "",
+            nombre: "",
+            descripcion: "",
+            precio: 0,
+            moneda: "",
+            imagen: "",
+            categoriaId: ""
+
         }
         );
         listar();
@@ -61,12 +65,15 @@ export default function CatalogoProductos() {
             <FormularioProducto productoEditar={productoEditar} guardar={agregarProducto}></FormularioProducto>
             <span>{mensaje}</span>
             <section className="products-container">
-                {productos.map(e => <CardProducto
+                {productos.map(e => <CardProductos
                     id={e.id}
-                    name={e.name}
-                    category={e.category}
-                    stock={e.stock}
-                    imageUrl={e.imageUrl}
+                    marca={e.marca}
+                    nombre={e.nombre}
+                    descripcion={e.descripcion}
+                    precio={e.precio}
+                    moneda={e.moneda}
+                    imagen={e.imagen}
+                    categoriaId={e.categoriaId}
                     eliminar={eliminarProducto}
                     editar={editarProducto}
                 />)}
