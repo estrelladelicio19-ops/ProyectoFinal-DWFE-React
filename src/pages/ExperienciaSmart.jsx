@@ -5,7 +5,7 @@ import HistoriaImagen from'../assets/historia.webp'
 function ExperienciaSmart() {
   return (
     <>
-    <main>
+    <main className="bodyExperiencia">
         <div class="tituloMenu">
                 <h1 data-i18n="titulo">MUNDO TECH</h1>
             </div>
