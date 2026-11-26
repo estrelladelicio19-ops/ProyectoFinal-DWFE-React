@@ -1,4 +1,4 @@
-const URL_API = "public/data/categorias.json";
+const URL_API = "../data/categorias.json";
 
 export async function obtenerCategoria()
 {

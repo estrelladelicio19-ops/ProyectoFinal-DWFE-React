@@ -1,18 +1,22 @@
 [
     {
         "id": 1,
-        "nombre": "Computación y Laptos"
+        "nombre": "Computación y Laptos",
+        "imagen": "https://res.cloudinary.com/dwfe/image/upload/v1697061870/ProyectoFinal-DWFE/Computacion_y_Laptops"
     },
     {
         "id": 2,
-        "nombre": "Celurares y Tablets"
+        "nombre": "Celurares y Tablets",
+        "imagen": "https://res.cloudinary.com/dwfe/image/upload/v1697061870/ProyectoFinal-DWFE/Celulares_y_Tablets"
     },
     {
         "id": 3,
-        "nombre": "Gaming"
+        "nombre": "Gaming",
+        "imagen": "https://res.cloudinary.com/dwfe/image/upload/v1697061870/ProyectoFinal-DWFE/Gaming"
     },
     {
         "id": 4,
-        "nombre": "Smart Home y Oficina"
+        "nombre": "Smart Home y Oficina",
+        "imagen": "https://res.cloudinary.com/dwfe/image/upload/v1697061870/ProyectoFinal-DWFE/Smart_Home_y_Oficina"
     }
 ]

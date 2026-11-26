@@ -18,7 +18,7 @@ function manejarCambio(e)
     const{name, value} = e.target;
     setFormulario({
         ...Formulario,
-        [name]: [name]=="stock"? Number(value):value
+        [name]: [name]=="precio"? Number(value):value
     });
     
 }  
@@ -32,7 +32,6 @@ function agregar(e){
 
 useEffect(()=>{
     
-        //if (productoEditar.id > 0)
         setFormulario(productoEditar);
     },[productoEditar])
 
@@ -40,8 +39,8 @@ useEffect(()=>{
         <>
         <form onSubmit={agregar}>
 
-            <label htmlFor="category">Categoria</label>
-            <input type="text" id="category" name="category" value={Formulario.categoriaId} onChange={manejarCambio}></input> 
+            <label htmlFor="categoriaId">Categoria</label>
+            <input type="text" id="categoriaId" name="categoriaId" value={Formulario.categoriaId} onChange={manejarCambio}></input> 
             <br />
             <br />
             <label htmlFor="nombre">Nombre</label>

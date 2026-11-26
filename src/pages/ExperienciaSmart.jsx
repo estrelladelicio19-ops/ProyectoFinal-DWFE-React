@@ -6,7 +6,7 @@ function ExperienciaSmart() {
   return (
     <>
     <main className="bodyExperiencia">
-        <div class="tituloMenu">
+        <div className="tituloMenu">
                 <h1 data-i18n="titulo">MUNDO TECH</h1>
             </div>
         <div className="historia-layout">

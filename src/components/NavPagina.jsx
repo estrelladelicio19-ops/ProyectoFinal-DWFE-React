@@ -74,7 +74,7 @@ export default function Nav() {
           <ul className="submenu">
             <li>
               <NavLink
-                to="/categorias#computacion"
+                to="/categorias-computacion"
                 className={claseActiva}
                 data-i18n="compLap"
                 onClick={cerrarMenus}
@@ -84,7 +84,7 @@ export default function Nav() {
             </li>
             <li>
               <NavLink
-                to="/categorias#celulares"
+                to="/categorias-celulares"
                 className={claseActiva}
                 data-i18n="celyTab"
                 onClick={cerrarMenus}
@@ -94,7 +94,7 @@ export default function Nav() {
             </li>
             <li>
               <NavLink
-                to="/categorias#gaming"
+                to="/categorias-gaming"
                 className={claseActiva}
                 data-i18n="gaming"
                 onClick={cerrarMenus}
@@ -104,7 +104,7 @@ export default function Nav() {
             </li>
             <li>
               <NavLink
-                to="/categorias#smarthome"
+                to="/categorias-smarthome"
                 className={claseActiva}
                 data-i18n="smartHome"
                 onClick={cerrarMenus}
@@ -119,7 +119,6 @@ export default function Nav() {
         <li
           className={`desplegable ${subMenuAbierto === "categorias" ? "open" : ""}`}>
           <NavLink
-            to=""
             className="nav-link"
             data-i18n="sopAyu"
             onClick={(e) => toggleSubMenu("soporte", e)}

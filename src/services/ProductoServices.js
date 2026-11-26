@@ -1,4 +1,4 @@
-const URL_API = "public/data/productos.json";
+const URL_API = "../data/productos.json";
 
 export async function obtenerProductos()
 {

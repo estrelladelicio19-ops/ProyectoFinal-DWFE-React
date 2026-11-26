@@ -1,19 +1,25 @@
 import { useEffect, useState } from "react"
-import { guardarProducto, obtenerProductos, borrarProducto, actualizarProducto } from "../services/ProductoServices"
+import { guardarProducto, obtenerProductos, borrarProducto, actualizarProducto                 } from "../services/ProductoServices"
 import CardProductos from "./CardProductos"
 import FormularioProducto from "./FormularioProducto";
 
 export default function CatalogoProductos() {
     const [productos, setProductos] = useState([]);
     const [productoEditar, setProductoEditar] = useState({
-        id: 0
-
+        id: 0,
+        marca: "",
+        nombre: "",
+        descripcion: "",
+        precio: 0,
+        moneda: "",
+        imagen: "",
+        categoriaId: ""
     });
     const [mensaje, setMensaje] = useState('')
 
     async function listar() {
         const resultado = await obtenerProductos();
-        setProductos(resultado.data);
+        setProductos(resultado);
     }
 
 
@@ -66,6 +72,7 @@ export default function CatalogoProductos() {
             <span>{mensaje}</span>
             <section className="products-container">
                 {productos.map(e => <CardProductos
+                    key={e.id}
                     id={e.id}
                     marca={e.marca}
                     nombre={e.nombre}
