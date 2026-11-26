@@ -29,13 +29,8 @@ export default function CatalogoCategoria() {
         setCategoriaEditar(
             {
             id: 0,
-            marca: "",
             nombre: "",
-            descripcion: "",
-            precio: 0,
-            moneda: "",
-            imagen: "",
-            categoriaId: ""
+            imagen:""
 
         }
         );
