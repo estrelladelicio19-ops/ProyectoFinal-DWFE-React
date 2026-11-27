@@ -2,21 +2,21 @@
     {
         "id": 1,
         "nombre": "Computación y Laptos",
-        "imagen": "https://res.cloudinary.com/dwfe/image/upload/v1697061870/ProyectoFinal-DWFE/Computacion_y_Laptops"
+        "imagen": "https://imgmedia.larepublica.pe/1000x590/larepublica/original/2021/07/14/60ef3fd3d3d96059d76323bf.webp"
     },
     {
         "id": 2,
         "nombre": "Celurares y Tablets",
-        "imagen": "https://res.cloudinary.com/dwfe/image/upload/v1697061870/ProyectoFinal-DWFE/Celulares_y_Tablets"
+        "imagen": "https://digitalreview.com.mx/wp-content/uploads/2024/03/Diferencias-entre-smartphones-tablets-y-phablets.jpg"
     },
     {
         "id": 3,
         "nombre": "Gaming",
-        "imagen": "https://res.cloudinary.com/dwfe/image/upload/v1697061870/ProyectoFinal-DWFE/Gaming"
+        "imagen": "https://universidadeuropea.com/resources/media/images/tipos-videojuegos-800x450.width-640.format-png.png"
     },
     {
         "id": 4,
         "nombre": "Smart Home y Oficina",
-        "imagen": "https://res.cloudinary.com/dwfe/image/upload/v1697061870/ProyectoFinal-DWFE/Smart_Home_y_Oficina"
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxrouIOQEXaH6aC3ZHBgEgMS-G3j5bmHdUEknVpWkDiQ&s=10"
     }
 ]

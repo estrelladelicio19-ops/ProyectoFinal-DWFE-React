@@ -1,15 +1,20 @@
 const URL_API = "http://localhost:3000/api/categorias";
 
+async function leerRespuesta(respuesta, mensajeError) {
+    const contenido = await respuesta.text();
+
+    if (!respuesta.ok) {
+        throw new Error(contenido || `${mensajeError} (HTTP ${respuesta.status})`);
+    }
+
+    return contenido ? JSON.parse(contenido) : null;
+}
+
 export async function obtenerCategoria()
 {
-    const response = await fetch(URL_API);  
-    if (!response.ok)
-        {
-            throw new Error("Error al cargar la data");            
-        }
-    
-    const resultado = await response.json();
-    if (!Array.isArray(resultado.data)) {
+    const response = await fetch(URL_API);
+    const resultado = await leerRespuesta(response, "Error al cargar categorías");
+    if (!resultado || !Array.isArray(resultado.data)) {
         throw new Error("La respuesta de categorías no contiene una lista válida");
     }
 
@@ -25,30 +30,19 @@ export async function guardarCategoria(producto) {
         body: JSON.stringify(producto)
     });    
 
-    if (!respuesta.ok) {
-        throw new Error("Error al registrar producto");
-    }
-
-    return await respuesta.json();
+    return leerRespuesta(respuesta, "Error al guardar categoría");
 }
 
 export async function borrarCategoria(id) {    
-    const respuesta = await fetch(`${URL_API}/${id}`, {
-        method: "DELETE",
-        headers: {
-            "Content-Type": "application/json"
-        },
-    });    
+    const respuesta = await fetch(`${URL_API}/${encodeURIComponent(id)}`, {
+        method: "DELETE"
+    });
 
-    if (!respuesta.ok) {
-        throw new Error("Error al eliminar producto");
-    }
-
-    return await respuesta.json();
+    return leerRespuesta(respuesta, "Error al eliminar categoría");
 }
 
 export async function actualizarCategoria(id,producto) {    
-    const respuesta = await fetch(`${URL_API}/${id}`,{
+    const respuesta = await fetch(`${URL_API}/${encodeURIComponent(id)}`,{
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
@@ -56,8 +50,5 @@ export async function actualizarCategoria(id,producto) {
         body: JSON.stringify(producto)
     });    
 
-    if (!respuesta.ok) {
-        throw new Error("Error al eliminar producto");
-    }
-    return await respuesta.json();
+    return leerRespuesta(respuesta, "Error al actualizar categoría");
 }
