@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom";
 import { guardarCategoria, obtenerCategoria, borrarCategoria, actualizarCategoria } from "../services/CategoriaProducto"
 import FormularioCategoria from "./FormularioCategoria";
+import CatalogoProductos from "./CatalogoProductos";
+
 
 export default function CatalogoCategoria() {
+    const navegar = useNavigate();
     const [categorias, setCategorias] = useState([]);
     const [categoriaEditar, setCategoriaEditar] = useState({
         id: 0,
@@ -11,7 +15,7 @@ export default function CatalogoCategoria() {
 
     });
     const [mensaje, setMensaje] = useState('')
-
+    
     async function listar() {
         const resultado = await obtenerCategoria();
         setCategorias(resultado);
@@ -88,7 +92,8 @@ export default function CatalogoCategoria() {
                             <h3>{e.nombre}</h3>
                             <div className="category-card__actions">
                                 <button type="button" className="category-button category-button--edit" onClick={() => editarCategoria(e)}>Editar</button>
-                                <button type="button" className="category-button category-button--delete" onClick={() => eliminarCategoria(e.id)}>Eliminar</button>
+                                <button type="button" className="category-button category-button--delete" onClick={() => eliminarCategoria(e.id)}>Eliminar</button> 
+                                <button type="button" className="category-button category-button--catalogo" onClick={() => navegar(`/productos`)}>Ver en catálogo</button>
                             </div>
                         </article>
                     ))}

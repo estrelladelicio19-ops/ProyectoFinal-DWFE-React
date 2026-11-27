@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import LayoutPrincipal from './Layout/LayoutPrincipal';
 import Inicio from './pages/Inicio';
 import ExperienciaSmart from './pages/ExperienciaSmart';

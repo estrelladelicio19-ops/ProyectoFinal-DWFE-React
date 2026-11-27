@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react"
-import { guardarProducto, obtenerProductos, borrarProducto, actualizarProducto                 } from "../services/ProductoServices"
+import { useNavigate } from "react-router-dom";
+import { guardarProducto, obtenerProductos, borrarProducto, actualizarProducto} from "../services/ProductoServices"
 import CardProductos from "./CardProductos"
 import FormularioProducto from "./FormularioProducto";
+
+
 
 export default function CatalogoProductos() {
     const [productos, setProductos] = useState([]);
@@ -65,6 +68,8 @@ export default function CatalogoProductos() {
         }
         , []
     )
+
+    const navegar = useNavigate();
     return (
 
         <>
