@@ -1,4 +1,4 @@
-const URL_API = "../data/categorias.json";
+const URL_API = "http://localhost:3000/api/categorias";
 
 export async function obtenerCategoria()
 {
@@ -8,7 +8,12 @@ export async function obtenerCategoria()
             throw new Error("Error al cargar la data");            
         }
     
-    return await response.json();   
+    const resultado = await response.json();
+    if (!Array.isArray(resultado.data)) {
+        throw new Error("La respuesta de categorías no contiene una lista válida");
+    }
+
+    return resultado.data;
 }
 
 export async function guardarCategoria(producto) {    

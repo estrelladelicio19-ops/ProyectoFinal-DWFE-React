@@ -20,7 +20,7 @@ export default function Footer() {
 
             <div className="footer-col">
 
-                <h3 data-i18n="" enlaces>Enlaces</h3>
+                <h3 className='enlaces'>Enlaces</h3>
 
                 <ul>
 
@@ -44,7 +44,7 @@ export default function Footer() {
 
             <div className="footer-col">
 
-                <h3 data-i18n="contacto">Contacto</h3>
+                <h3>Contacto</h3>
 
                 <p>📍 Av. España 1240 - Trujillo</p>
 
